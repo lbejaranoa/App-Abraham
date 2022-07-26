@@ -1,0 +1,23 @@
+''''Al pasar a productivo reinstalar el simpel history y el pillow
+python -m pip install Pillow
+pip install django-simple-history
+
+python manage.py runsslserver --certificate /etc/nginx/ssl/SIDER.crt --key /etc/nginx/ssl/SIDER.key 0.0.0.0:4443
+
+ 
+ python manage.py runserver 0.0.0.0:4443
+
+
+ python manage.py startapp tasksw
+ y se mueve a apps
+ 
+
+
+
+apps.py
+from django.apps import AppConfig
+
+
+class OrdersConfig(AppConfig):
+    name = 'apps.orders'
+'''
